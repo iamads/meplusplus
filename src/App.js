@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Time from './components/base/TimePicker';
+import Button from './components/base/Button';
+import DropDown from './components/base/DropDown';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <Time label="lost" step={900} />
+
+      <Button label="Bhokali" color="primary" onClick={() => console.log("Bhokali")} />
+      <DropDown label="select away" options={['s.,nfs', 'sdfsdf', 'sdsdf']} onSelect={(s) => console.log(s)} />
       </div>
     );
   }

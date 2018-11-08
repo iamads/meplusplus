@@ -32,6 +32,7 @@ const myDay = [
                 options: ['I read!', 'I wrote!', 'I coded!']
             },
             {
+                description: 'How much time did you take?',
                 type: 'timeRange'
             }
         ],
